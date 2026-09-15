@@ -45,6 +45,10 @@
             <artifactId>spring-boot-starter-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+<!--        <dependency>
+            <groupId>org.springframework.vault</groupId>
+            <artifactId>spring-vault-core</artifactId>
+        </dependency>-->
     </dependencies>
     <dependencyManagement>
         <dependencies>
