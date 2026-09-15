@@ -5,6 +5,9 @@ spring:
   application:
     name: ms-config-server
 
+  main:
+    banner-mode: off
+
   cloud:
     config:
       fail-fast: true
@@ -13,3 +16,36 @@ spring:
         multiplier: 1.3
         max-interval: 10000
         max-attempts: 20
+      server:
+        #        vault:
+        #          order: 1
+        #          host: ${VAULT_HOST:vault}
+        #          scheme: ${VAULT_SCHEME:http}
+        #          port: ${VAULT_PORT:8200}
+        #          kv-version: ${VAULT_VERSION:2}
+        #          token: ${VAULT_TOKEN:00000000-0000-0000-0000-000000000000}
+        git:
+          #          order: 2
+          default-label: ${GIT_BRANCH:develop}
+          uri: ${GIT}
+          #          username:
+          #          password:
+          ignore-local-ssh-settings: true
+          passphrase: ${GIT_PASSPHRASE}
+          private-key: |
+                       -----BEGIN EC PRIVATE KEY-----
+                       Proc-Type: 4,ENCRYPTED
+                       DEK-Info: AES-128-CBC,9F2ADABEA724A42C91BFE929D4ED3B4B
+  
+                       EnJn9sxLc5+gcMipntTlkKb2ggejD+eXXRnRGrUfYVtNoYV/Xcj+76xcXmXBHRx0
+                       7AyaA1x5ET/4c3ZeCJ3gcmOA2DUnUS87h2RkHXmEmGT37pJuc6x1R7uMnTwq1g0R
+                       tAppybjzcmxcBN347gPXatOnIrrK0rbPQrntLFZJhlwtKZMOqxpG2PwkSw2Z33gX
+                       8dS11Ay6j1LMn1QD7CEJJn1H3G8/mfcJ77tkNi7qmdePSJdmkxY+8zdNfc6XMCAF
+                       aZvKj/u01zMzrWfTHcXht1XLXhDTnAf03gP+uY8mN8g=
+                       -----END EC PRIVATE KEY-----
+          #private-key: ${GIT_SSH_KEY}
+
+  security:
+    user:
+      name: ${CONFIG_SERVER_USERNAME:admin}
+      password: ${CONFIG_SERVER_PASSWORD:admin}
