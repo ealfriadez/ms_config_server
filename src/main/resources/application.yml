@@ -40,29 +40,29 @@ spring:
 #          private-key: file:${user.home}/.ssh/msi
 #          private-key: ${GIT_SSH_KEY}
 #-----------------------T R A B A J O-------------------------------------------------
-          private-key: |
-                       -----BEGIN EC PRIVATE KEY-----
-                       Proc-Type: 4,ENCRYPTED
-                       DEK-Info: AES-128-CBC,AF7139A7DDDF1A719C53FA4D47467725
-
-                       weKfxLEO6G0jSO49LoDbBLNd9m5BuS0ZV8fFf8zOJIpkHpxVIIXZfyC1PsV2zDuO
-                       t7vx4lmHc0C/Rn7441OKO5EcRT0XEaV68Z32LYzGwHDfj3DEXl05TECpkZieEmsN
-                       WRyIBjKcHYs3+fONGvcUDzPuWBON7UVeTHvmptjPSNupyqTZfWL6sJ70B6AcyJCO
-                       HC20krXPV8N/3Z5kHxiwYkImtuwBV4fjYAjpMGkR32koQrRjNXoX4KEIQbFDipoD
-                       1WsBhCOM3nXTtwdBJoFp9MjK0LhmxuPqnwre1NhJbcs=
-                       -----END EC PRIVATE KEY-----
-#-----------------------C A S A-------------------------------------------------
 #          private-key: |
 #                       -----BEGIN EC PRIVATE KEY-----
 #                       Proc-Type: 4,ENCRYPTED
-#                       DEK-Info: AES-128-CBC,9F2ADABEA724A42C91BFE929D4ED3B4B
+#                       DEK-Info: AES-128-CBC,AF7139A7DDDF1A719C53FA4D47467725
 #
-#                       EnJn9sxLc5+gcMipntTlkKb2ggejD+eXXRnRGrUfYVtNoYV/Xcj+76xcXmXBHRx0
-#                       7AyaA1x5ET/4c3ZeCJ3gcmOA2DUnUS87h2RkHXmEmGT37pJuc6x1R7uMnTwq1g0R
-#                       tAppybjzcmxcBN347gPXatOnIrrK0rbPQrntLFZJhlwtKZMOqxpG2PwkSw2Z33gX
-#                       8dS11Ay6j1LMn1QD7CEJJn1H3G8/mfcJ77tkNi7qmdePSJdmkxY+8zdNfc6XMCAF
-#                       aZvKj/u01zMzrWfTHcXht1XLXhDTnAf03gP+uY8mN8g=
+#                       weKfxLEO6G0jSO49LoDbBLNd9m5BuS0ZV8fFf8zOJIpkHpxVIIXZfyC1PsV2zDuO
+#                       t7vx4lmHc0C/Rn7441OKO5EcRT0XEaV68Z32LYzGwHDfj3DEXl05TECpkZieEmsN
+#                       WRyIBjKcHYs3+fONGvcUDzPuWBON7UVeTHvmptjPSNupyqTZfWL6sJ70B6AcyJCO
+#                       HC20krXPV8N/3Z5kHxiwYkImtuwBV4fjYAjpMGkR32koQrRjNXoX4KEIQbFDipoD
+#                       1WsBhCOM3nXTtwdBJoFp9MjK0LhmxuPqnwre1NhJbcs=
 #                       -----END EC PRIVATE KEY-----
+#-----------------------C A S A-------------------------------------------------
+          private-key: |
+                       -----BEGIN EC PRIVATE KEY-----
+                       Proc-Type: 4,ENCRYPTED
+                       DEK-Info: AES-128-CBC,9F2ADABEA724A42C91BFE929D4ED3B4B
+
+                       EnJn9sxLc5+gcMipntTlkKb2ggejD+eXXRnRGrUfYVtNoYV/Xcj+76xcXmXBHRx0
+                       7AyaA1x5ET/4c3ZeCJ3gcmOA2DUnUS87h2RkHXmEmGT37pJuc6x1R7uMnTwq1g0R
+                       tAppybjzcmxcBN347gPXatOnIrrK0rbPQrntLFZJhlwtKZMOqxpG2PwkSw2Z33gX
+                       8dS11Ay6j1LMn1QD7CEJJn1H3G8/mfcJ77tkNi7qmdePSJdmkxY+8zdNfc6XMCAF
+                       aZvKj/u01zMzrWfTHcXht1XLXhDTnAf03gP+uY8mN8g=
+                       -----END EC PRIVATE KEY-----
 
   security:
     user:
